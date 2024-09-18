@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dometrain.EFCore.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1985c2b327de0d29decb681a15de9707220bbf02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2af3ec7bdd7f2259ef77bb28cfb87c17ff420e2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dometrain.EFCore.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dometrain.EFCore.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

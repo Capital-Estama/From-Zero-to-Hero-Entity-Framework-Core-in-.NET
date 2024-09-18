@@ -1,5 +1,6 @@
 using Dometrain.EFCore.API.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Dometrain.EFCore.API.Controllers;
 
@@ -7,19 +8,31 @@ namespace Dometrain.EFCore.API.Controllers;
 [Route("[controller]")]
 public class MoviesController : Controller
 {
+    private readonly MoviesContext _context;
+    public MoviesController(MoviesContext context)
+    {
+        _context = context;
+    }
+
     [HttpGet]
     [ProducesResponseType(typeof(List<Movie>), StatusCodes.Status200OK)]
     public async Task<IActionResult> GetAll()
     {
-        throw new NotImplementedException();
+        return Ok(await _context.Movies.ToListAsync());
+        
     }
 
     [HttpGet("{id:int}")]
     [ProducesResponseType(typeof(Movie), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Get([FromRoute] int id)
-    {
-        throw new NotImplementedException();
+    {   
+        // looking for a Boolean in the lamda 
+        // First throw ex -- or default throw Null
+        var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == id);
+        
+        // turn return into a ternary 
+        return Ok(movie);
     }
     
     [HttpPost]

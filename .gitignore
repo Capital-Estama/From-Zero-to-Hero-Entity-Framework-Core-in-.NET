@@ -1,0 +1,93 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+build/
+bld/
+x64/
+x86/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code files
+.vscode/
+
+# Rider IDE files
+.idea/
+*.sln.iml
+
+# MonoDevelop files
+*.pidb
+*.userprefs
+
+# Backup & report files from converting an old project file
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.htm
+UpgradeLog*.XML
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Business Intelligence projects
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+
+# Test results
+[TestResults]/
+*.trx
+*.coverage
+*.coveragexml
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+
+# Build logs
+*.log
+msbuild.log
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# StyleCop
+StyleCopReport.xml
+
+# File-based packages
+*.nupkg
+*.snupkg
+packages/
+*.symbols.nupkg
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# NPM Packages
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Publish files
+*.publishsettings
+publish/
+
+# Azure App Service​⬤
